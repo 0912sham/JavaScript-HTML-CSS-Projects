@@ -1,0 +1,22 @@
+var express = require('express');
+var app = express();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+
+app.get('/',function(req,res){
+	res.sendfile('chat.html');
+
+});
+io.on('connection',function(socket){
+	console.log('user came');
+
+});
+io.on('disconnected',function(){
+	console.log('user gone');
+});
+
+
+
+http.listen(3001,function(){
+	console.log('server is listening')
+});

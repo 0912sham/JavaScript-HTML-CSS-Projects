@@ -1,0 +1,28 @@
+{
+  "name": "fastlineapp",
+  "version": "1.0.0",
+  "description": "simpe knowledge driven, monitoring and orchestration system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "hbs": "^4.0.1",
+    "mongodb": "*",
+    "mongoose": "*",
+    "morgon": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "request": "*",
+    "socket.io": "^2.0.4"
+  }
+}
